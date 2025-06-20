@@ -12,7 +12,7 @@ services:
         - /etc/secrets/:/etc/secrets/
         - /var/log/ansible:/var/log/ansible
         - ./config:/etc/config
-        - /Users/kevin/network_services/cnicc-customer-onboarding:/project
+        - /Users/kevin/network_services/network-plugin:/project
         - ./compose_script.sh:/project/compose_script.sh
       command: bash /project/compose_script.sh
   remote_host_ssh:
